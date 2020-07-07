@@ -1,0 +1,26 @@
+
+
+package com.moreyeah.test.presentation.commons
+
+
+
+class AppConstants {
+
+    companion object {
+
+
+        const val HEADER_TOKEN: String = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VycyI6eyJmaXJzdE5hbWUiOiJIaW1hbnNodTIiLCJsYXN0TmFtZSI6IlJhdGhvcmUiLCJtb2JpbGVOdW1iZXIiOjExMTExMTExMTEsInZlcmlmaWVkIjoidHJ1ZSIsInR5cGUiOjEsInN0YXR1cyI6MCwiaW1hZ2VfdXJsIjoiaHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vc2FuZGVlcGtob3JlL2ltYWdlL3VwbG9hZC9hXzM2MC9ubm9jd3E2YWM4endzMTFtNzR1ZC5qcGciLCJpc1Byb3ZpZGVyIjpmYWxzZSwiaXNNb2JpbGVWZXJpZmllZCI6dHJ1ZSwidHJhY2tpbmdVcmwiOiJoaW1hbnNodTIxMDEiLCJyZWZlcnJhbE1pbnV0ZXMiOjAsInJlc2V0UGFzc3dvcmRDb2RlIjoiIiwiZW1haWwiOiJoaW1hbnNodV9teTFAbW9yZXllYWhzLmluIiwiY291bnRyeUNvZGUiOjkxLCJvdHBDcmVhdGVkQXQiOjE1NjA0MDc1MjIyMDB9LCJ3YWxsZXQiOnsicHJpY2VDb2VmZmljaWVudCI6MC44MzMzMzMzMzMzMzMzMzMzfSwiYWNjZXNzVHlwZSI6Im9wZW4iLCJzZXJ2aWNlQWNjZXNzVHlwZSI6Im9wZW4iLCJzZXJ2aWNlR3JvdXBzIjpbXSwiaGFzQ3VzdG9tRmVhdHVyZXMiOmZhbHNlLCJfaWQiOiI1YzEwYWJkMGY2MjUzOTY3OTU0ZTMwMjciLCJjcmVhdGVkQXQiOiIyMDE4LTEyLTEyVDA2OjMzOjUyLjY0NFoiLCJ1cGRhdGVkQXQiOiIyMDIwLTA2LTE4VDA4OjI3OjE5LjQ2NFoiLCJ1c2VySWQiOjQ2NiwiX192IjowLCJpc0dyb3VwSW5mb0ZpbGxlZCI6ZmFsc2UsImF1dGhvcml6YXRpb25JbmZvIjpudWxsLCJpYXQiOjE1OTI0Njg4OTV9.QlRG0WzUbuigX9kQM8cC31LaXEkE9IoAxwb3VIMtHPc"
+
+        const val HEADER_KEY: String = "Authorization"
+
+        const val BASE_URL: String = (" https://api-dev.taskhuman.com/v0.7/")
+
+
+
+    }
+
+
+
+
+
+}
