@@ -1,6 +1,5 @@
 # MoreYeah-Sample
-Android Sample app to show usertopics, implementing  MVVM + Clean Architecture using kotlin following solid and clean code principles .
-
+Sameple application that follows the clean architecture.
 
 **The goal of this app is to show how to implement MVVM design pattern with architecture components & clean architecture in Kotlin .**
 
@@ -15,6 +14,8 @@ The repository has two branches
 - domain : Contains the domain layer and useCases with repository interfaces.
 - presentation : Contains the view layer that consists of views & viewModels
 
+![Topics](topics.jpg)
+![Country Times](timer.jpg)
 
 **Please note that each developer has his own style in coding ,The goal is to implement the concepts of the design and architecting in the right way .**
 
