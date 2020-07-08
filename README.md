@@ -17,12 +17,16 @@ The repository has two branches
 ![Topics](topics.jpg)
 ![Country Times](timer.jpg)
 
-**Please note that each developer has his own style in coding ,The goal is to implement the concepts of the design and architecting in the right way .**
 
+### My Other Work
 
-### Contribution
+1. https://github.com/droidwithme/kotlin-mvp-dagger2-rxjava-clean_architecture-master
+2. https://github.com/droidwithme/android-mvp-architecture
+3. https://github.com/droidwithme/TextLocal-for-OTP-message
 
-Please feel free to make a pull request or fork.
+### My StackOverflow
+https://stackoverflow.com/users/4745607/devendra-singh
+
 
 ### Rate
 
