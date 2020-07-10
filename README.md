@@ -1,11 +1,8 @@
 # MoreYeah-Sample
 Sameple application that follows the clean architecture.
 
-**The goal of this app is to show how to implement MVVM design pattern with architecture components & clean architecture in Kotlin .**
-
 
 ##  Source Code representation :
-The repository has two branches
 
 1-master : It has the implementaion of latest technologies such as kotlin coroutines, LiveData and repository pattern and Its the newest & latest version of the updated code .
 
