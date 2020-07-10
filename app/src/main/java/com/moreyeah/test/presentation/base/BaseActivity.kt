@@ -18,7 +18,9 @@ import com.google.android.material.snackbar.Snackbar
 import dagger.android.AndroidInjection
 
 
-
+/*
+* BaseActivity to let other Activity to extends with boilerplate
+* */
 abstract class BaseActivity<V : BaseViewModel<BaseViewState>> : AppCompatActivity(), BaseFragment.Callback {
 
     var mProgressDialog: ProgressDialog? = null

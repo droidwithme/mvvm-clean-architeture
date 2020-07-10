@@ -10,14 +10,18 @@ import dagger.android.HasActivityInjector
 import javax.inject.Inject
 
 
+/*
+* Main Application instance
+* */
 class DroidApp : Application(), HasActivityInjector {
 
     @Inject
     lateinit var activityDispatchingAndroidInjector: DispatchingAndroidInjector<Activity>
 
 
-
-
+    /*
+    * Setting up the Dagger
+    * */
     override fun activityInjector(): AndroidInjector<Activity> {
         return activityDispatchingAndroidInjector
     }

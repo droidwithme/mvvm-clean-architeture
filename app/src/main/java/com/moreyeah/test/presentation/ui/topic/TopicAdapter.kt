@@ -14,7 +14,7 @@ import com.moreyeah.test.domain.mapper.Phrase
 import javax.inject.Inject
 
 
-class TopicAdapter @Inject constructor(val mTopicList: MutableList<Phrase>, val mContext: Context) : RecyclerView.Adapter<TopicAdapter.MovieViewHolder>() {
+class TopicAdapter @Inject constructor(val mTopicList: MutableList<Phrase>, val mContext: Context) : RecyclerView.Adapter<TopicAdapter.TopicViewHolder>() {
 
 
     val mLayoutInflater = LayoutInflater.from(mContext);
@@ -41,13 +41,13 @@ class TopicAdapter @Inject constructor(val mTopicList: MutableList<Phrase>, val 
         mTopicList.clear()
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TopicViewHolder {
         val view = mLayoutInflater.inflate(R.layout.item_topic_view, parent, false)
-        return MovieViewHolder(view)
+        return TopicViewHolder(view)
     }
 
     // stores and recycles views as they are scrolled off screen
-    inner class MovieViewHolder internal constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class TopicViewHolder internal constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var myImgView: ImageView
         var myTitleView: TextView
 
@@ -58,7 +58,7 @@ class TopicAdapter @Inject constructor(val mTopicList: MutableList<Phrase>, val 
 
     }
 
-    override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: TopicViewHolder, position: Int) {
         val topicPoster = mTopicList[position].imageUrl
         if (topicPoster != null)
             Glide.with(mContext)

@@ -2,7 +2,9 @@ package com.moreyeah.test.presentation.main
 
 import android.content.Context
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
@@ -25,7 +27,7 @@ class MainActivity : BaseActivity<MainViewModel>(), HasSupportFragmentInjector {
     lateinit var mMainViewModel: MainViewModel
 
     private lateinit var mContext: Context
-
+    private var doubleBackToExitPressedOnce = false
     override fun getLayoutId(): Int = R.layout.activity_main
     override fun getViewModel(): MainViewModel = mMainViewModel
 
@@ -52,17 +54,27 @@ class MainActivity : BaseActivity<MainViewModel>(), HasSupportFragmentInjector {
         val fragmentManager: FragmentManager = supportFragmentManager
         val fragmentTransaction: FragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right)
-        fragmentTransaction.replace(R.id.container, fragment)
+        fragmentTransaction.replace(R.id.container, fragment, "topic")
                 .addToBackStack(null).commit()
 
     }
 
     override fun onBackPressed() {
-        if (supportFragmentManager.backStackEntryCount == 0) {
-            this.finish()
+        val fragment = supportFragmentManager.findFragmentById(R.id.container)
+        if (fragment is TopicFragment) {
+            if (doubleBackToExitPressedOnce) {
+                this.finish()
+            } else {
+                this.doubleBackToExitPressedOnce = true
+                onError("Please click Back again to exit")
+                Handler().postDelayed({ doubleBackToExitPressedOnce = false }, 2000)
+            }
+
         } else {
-            supportFragmentManager.popBackStack()
+            setUp()
         }
+
+
     }
 
 

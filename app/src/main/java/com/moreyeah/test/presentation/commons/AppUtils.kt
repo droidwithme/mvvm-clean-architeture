@@ -10,7 +10,9 @@ import android.graphics.drawable.ColorDrawable
 import android.net.ConnectivityManager
 
 
-
+/*
+* To show the progressBar
+* */
 class AppUtils {
 
     companion object {

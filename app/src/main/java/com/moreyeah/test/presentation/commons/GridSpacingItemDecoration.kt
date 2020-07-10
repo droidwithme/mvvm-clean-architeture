@@ -6,6 +6,10 @@ import androidx.recyclerview.widget.RecyclerView
 
 
 
+
+/*
+* Item spacing of recycerlview adapter
+* */
 class GridSpacingItemDecoration(private val spanCount: Int, private val spacing: Int, private val includeEdge: Boolean) : RecyclerView.ItemDecoration() {
 
 

@@ -6,6 +6,9 @@ import androidx.lifecycle.ViewModel
 
 
 
+/*
+* BaseViewModel to let child ViewModels to extends with boilerplate
+* */
 abstract class BaseViewModel<T : BaseViewState>() : ViewModel() {
 
     protected open var mUiState = MutableLiveData<T>()

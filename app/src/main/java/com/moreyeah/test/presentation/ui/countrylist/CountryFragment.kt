@@ -18,8 +18,7 @@ import com.moreyeah.test.presentation.base.BaseViewState
 import com.moreyeah.test.presentation.commons.GridSpacingItemDecoration
 import com.moreyeah.test.presentation.main.MainActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_detail.*
-import kotlinx.android.synthetic.main.fragment_topic.*
+import kotlinx.android.synthetic.main.fragment_country.*
 import java.util.*
 import javax.inject.Inject
 
@@ -41,7 +40,7 @@ class CountryFragment : BaseFragment<CountryFragmentViewModel>() {
     lateinit var mCountryAdapter: CountryAdapter
 
 
-    override fun getLayoutId(): Int = R.layout.fragment_detail
+    override fun getLayoutId(): Int = R.layout.fragment_country
     override fun getViewModel(): CountryFragmentViewModel = ViewModelProviders.of(this, mViewModelFactory).get(CountryFragmentViewModel::class.java)
     override fun getLifeCycleOwner(): LifecycleOwner = this
 

@@ -6,7 +6,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 
 
-
+/*
+* Factory pattern to provide ViewModel
+* */
 class ViewModelProviderFactory<V : Any>(private var viewModel: V) : ViewModelProvider.Factory {
 
     override fun <T : ViewModel> create(modelClass: Class<T>): T {

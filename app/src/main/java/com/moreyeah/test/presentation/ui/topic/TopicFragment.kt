@@ -24,6 +24,10 @@ import kotlinx.android.synthetic.main.fragment_topic.*
 import javax.inject.Inject
 
 
+
+/*
+* To list the topics
+* */
 @Suppress("UNCHECKED_CAST")
 class TopicFragment : BaseFragment<TopicFragmentViewModel>(), TopicAdapter.OnTopicClickListener {
 
@@ -95,9 +99,9 @@ class TopicFragment : BaseFragment<TopicFragmentViewModel>(), TopicAdapter.OnTop
     override fun onItemClick() {
         val fragmentManager: FragmentManager = activity!!.supportFragmentManager
         val fragmentTransaction: FragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
-        fragmentTransaction.replace(R.id.container, CountryFragment())
-        fragmentTransaction.addToBackStack(null).commitNowAllowingStateLoss()
+        fragmentTransaction.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right)
+        fragmentTransaction.replace(R.id.container, CountryFragment(), "country")
+                .addToBackStack(null).commit()
 
     }
 

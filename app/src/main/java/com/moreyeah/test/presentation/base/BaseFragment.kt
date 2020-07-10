@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import androidx.lifecycle.LifecycleOwner
 import dagger.android.support.AndroidSupportInjection
 
-
+/*
+* BaseFragment to let other Fragments to extends with boilerplate
+* */
 abstract class BaseFragment<V : BaseViewModel<BaseViewState>> : androidx.fragment.app.Fragment() {
 
     var mActivity: BaseActivity<V>? = null
